@@ -32,7 +32,13 @@ a {
     border-radius: 4px;
     color: white;
     font-weight: 400;
+
 }
+a:hover {
+    color: blue;
+    background-color: white;
+}
+
 ul {
     width: 300px;
     margin: 0 auto;
