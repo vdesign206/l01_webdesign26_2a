@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;  
+        }
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        header .logo {
+            position: relative;
+            max-width: 80px;
+        }
+        header ul {
+            position: relative;
+            display: flex;
+        }
+        header ul li {
+            list-style: none;
+        }
+        header ul li a {
+            display: inline-block;
+            color: #333;
+            font-weight: 400;
+            margin-left: 40px;
+            text-decoration: none;
+        }
+        .content {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content .textBox {
+            position: relative;
+            max-width: 600px;
+        }
+        .content .textBox h2 {
+            color: #333;
+            font-size: 4em;
+            line-height: 1.4em;
+            font-weight: 500;
+        }
+        .content .textBox h2 span {
+            color: #017143;
+            font-size: 1.2em;
+            font-weight: 900;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="" class="logo"><img src="./imgs/logo.png" alt=""></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus rem voluptatem, quam sint excepturi animi dolorem quisquam praesentium, velit aperiam nobis magnam iure architecto vero tempora alias. Nihil, inventore nostrum!</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./imgs/img1.png" alt="" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./imgs/thumb1.png" alt=""       onclick="imgSlider('./imgs/img1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="./imgs/thumb2.png" alt=""       onclick="imgSlider('./imgs/img2.png'); changeCircleColor('#017143')"></li>
+            <li><img src="./imgs/thumb3.png" alt=""       onclick="imgSlider('./imgs/img3.png'); changeCircleColor('#017143')"></li>
+
+        </ul>
+        <ul class="sci">
+            <li><a href=""><img src="./imgs/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="./imgs/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="./imgs/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script>
+
+    </script>
+    
+</body>
+</html>
