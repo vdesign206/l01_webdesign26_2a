@@ -4,6 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        section:nth-child(odd) {
+            background-color: rgb(221, 221, 221);
+        }
+        .wrapper {
+            max-width: 1200px;
+
+            margin: auto;
+        }
+        h1 {
+            color: skyblue;
+            font-size: 48px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+        .btns {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .btns .container {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+
+        }
+        .btns__menu {
+            display: flex;
+            justify-content: center;
+        }
+        .btns__menu .btn {
+            font-size: 16px;
+            font-weight: 600;
+            color: #193a40;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+            background-color: #9ad2d9;
+
+        }
+        .btns__menu .btn:hover {
+            background-color: white;
+        }
+        button {
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <div class="btns">
